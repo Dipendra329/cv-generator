@@ -1,0 +1,28 @@
+/* body{
+    color: black;
+
+*background-color: darkblue;
+} */
+
+#cv-form{
+
+   /* display: none;*/
+}
+
+#cv-template{
+
+    display: none;
+}
+
+
+.mying{
+
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background{
+
+    background-color: aquamarine;
+}

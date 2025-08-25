@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="styl.css">
+    <title>Resume Generator</title>
+  </head>
+  <body>
+    <!-- here we start-->
+
+ <div class="container" id="cv-form" > 
+    <h1 class="text-center my-2">Resume Generator</h1>
+    <p class="text-center">Learn something new...</p>
+
+        <div class="row">
+        <div class="col-md-6">
+            <h3>Personal Information</h3>
+
+
+            <div class="from-group">
+            <label for="namefield">Your Name</label>
+            <input type="text" id="namefield" placeholder="Enter here" class="form-control" >
+            
+             </div> 
+    
+          
+    <div class="from-group mt-2">
+        <label for="contactfield">Contact</label>
+        <input type="text" id="contactfield" placeholder="Enter here" class="form-control" >
+        
+    </div> 
+
+
+    <div class="from-group mt-2">
+        <label for="address field ">Address</label>
+       <textarea id="addressfield" placeholder="Enter here" class="form-control" rows="5"></textarea>
+        
+    </div> 
+
+    <p class="text-secondary my-3">Important link</p>
+    <div class="from-group mt-2">
+        <label for="linkedfield ">Linked in</label>
+        <input type="text" id="linkedfield" placeholder="Enter here" class="form-control" >
+        
+    </div> 
+
+
+    
+    <div class="from-group mt-2">
+        <label for="Facebookfield ">Facebook</label>
+        <input type="text" id="facebookfield" placeholder="Enter here" class="form-control" >
+        
+    </div> 
+
+
+    
+    <div class="from-group mt-2">
+        <label for="instafield ">Instagram</label>
+        <input type="text" id="instafield" placeholder="Enter here" class="form-control" >
+    </div>
+    </div> 
+         
+ 
+         
+        <div class="col-md-6">
+
+            <!--second col-->
+            <h3>Professional Information</h3>
+
+
+            <div class="from-group mt-2">
+                <label for=" ">Objective</label>
+               <textarea id="objectivefield" placeholder="Enter here" class="form-control" rows="3"></textarea>
+                
+            </div> 
+
+            <div class="from-group mt-2" id="we">
+                <label for="">Work Experience</label>
+                <textarea 
+                placeholder="Enter here" class="form-control wefield" rows="3"  ></textarea>
+
+                <div class="container text-center mt-3" id="weAddButton">
+                    <button onclick="addNewWEfield()" class="btn btn-primary btn-sm">Add</button>
+                    
+                </div>
+            </div>
+            
+            
+
+            <div class="from-group mt-2" id="weaddbutton">
+                <label for="">Academic Qualification</label>
+                <textarea placeholder="Enter here" class="form-control eqfield" rows="3" ></textarea>
+            
+                
+                <div class="container text-center mt-2" id="aqaddbutton">
+                    <button onclick="addNewAQfield()" class="btn btn-primary btn-sm">Add</button>
+
+                </div>
+                </div>
+                </div>
+            </div>  
+       
+
+            <div class="container text-center mt-5 ">
+            <button onclick="addNewfield()" class="btn btn-primary btn-lg">Generate CV</button>
+
+            </div>
+        </div>
+ 
+ 
+ 
+        
+         
+<!----------------------------------------------------->
+
+ <!--  -------       Cv template  --------         -->
+ 
+  <div class="container" id="cv-template">
+    <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+           <!--  first col  -->
+
+           <img src="https://th.bing.com/th/id/OIP.TndGIXGRsNBA-eoRt5UcKwAAAA?rs=1&pid=ImgDetMain" alt="" class="img-fluid mying"/>
+
+           <div class="container">
+            <p id="n1">Dipendra rajak</p>
+            <p id="n2">+78988844555, +9845689997</p>
+            <p id="n3">48559/7784 Birateee 43 US </p>
+
+           <hr />
+
+           <p><a id="f1" href="http://">https://www.linked.com</a></p>
+
+           <p><a id="f2" href="http://">https://www.facebook.com</a></p>
+
+           <p><a id="f3" href="http://">https://www.Instagram.com</a></p>
+
+
+
+
+
+
+
+
+           </div>
+            
+        </div>
+
+       <!--   -----   -----    -----    -----   -->
+
+        <div class="col-md-8 py-5">
+
+              <!--  second col   -->
+
+              <h1 id="t1" class="text-center" style="font-weight: 980;">Dipendra rajak</h1>
+
+
+              <!--    objective        -->
+
+              <div class="card mt-5 ">
+                <div class="card-header background">
+                    <h3>Objective</h3>
+                </div>
+                    <div class="card-body">
+
+                        <p id="o1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil qui, molestias perferendis eveniet ipsa ipsam aspernatur eius repellendus voluptas fuga at, debitis unde accusamus. Non voluptate sequi, illum ducimus doloremque accusamus suscipit. Rem minus at deserunt quia laboriosam optio perferendis provident et, quam sit cumque doloribus. Unde, deserunt similique!
+                        </p>
+                    </div>
+               </div>
+
+
+               <!-- work experience     -->
+
+               <div class="card mt-4 ">
+                <div class="card-header background">
+                    <h3>Work Experiences</h3>
+                </div>
+                    <div class="card-body">
+
+                      <ul id="w1">
+                        <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut.
+                      </li>
+
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut.
+                      </li>
+
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut.
+                      </li>
+                      </ul>
+                     </div>
+                 </div>
+
+
+                 <!-- Academic qualification    -->
+
+
+                 <div class="card mt-4 ">
+                    <div class="card-header background">
+                        <h3>Academic qualification</h3>
+                    </div>
+                        <div class="card-body">
+    
+                          <ul id="uy">
+                            <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut.
+                          </li>
+    
+                          <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut.
+                          </li>
+    
+                          <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, aut.
+                          </li>
+                          </ul>
+                         </div>
+                     </div>
+
+                     <div class="container mt-3 text-center">
+
+                        <button onclick="printcv()" class="btn background">Print CV</button>
+
+
+
+                     </div>
+
+        </div>
+    </div>
+  </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="dipend.js"></script>
+  </body>
+</html>
